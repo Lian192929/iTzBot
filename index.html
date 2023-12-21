@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<!-- HTML -->
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>iTzBot</title>
+    <meta content="iTzBot" property="og:title" />
+    <meta content="iTzBot the Discord bot" property="og:description" />
+    <meta content="https://iTzBot.netlify.app" property="og:url" />
+    <meta
+      content="https://cdn.discordapp.com/attachments/1039277692106846288/1131756527636729917/Airwavy_Logo_no_text_light.png"
+      property="og:image"
+    />
+    <meta content="#48d4ca" data-react-helmet="true" name="theme-color" />
+
+    <link rel="icon" type="image/x-icon" href="Airwavy.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- HEAD END -->
+
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a href="https://discord.gg/cGNFnsXpwZ" class="logo">
+        <img
+          src="Airwavy.png"
+          alt="Airwavy Logo"
+          class="logo-image"
+          id="light-mode-logo"
+        />
+      </a>
+
+      <i class="bx bx-menu" id="menu"></i>
+      <nav class="navbar">
+        <div class="mode-switch">
+          <input type="checkbox" id="dark-mode-toggle" />
+          <label for="dark-mode-toggle" class="toggle-label">
+            <i class="fas fa-moon toggle-icon dark-icon"></i>
+            <i class="fas fa-sun toggle-icon light-icon"></i>
+          </label>
+        </div>
+        <a href="#home" class="active">Home</a>
+        <a href="#features">Features</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://discord.com/users/919742906762395688" target="_blank">Contact</a>
+        <a href="https://discord.gg/RpSyVmvZ9z" class="btn-login">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </a>
+      </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <img
+          src="Airwavy.png"
+          style="width: 170px; height: 170px"
+          alt="Airwavy Logo"
+          class="logo-image"
+        />
+        <h1>iTzBot</h1>
+        <h3><span class="multiple-text"></span></h3>
+        <p>
+          Get iTzBot by clicking the button below or joining the Discord server
+          using the navigation below
+        </p>
+        <div class="social-media">
+          <a href="https://twitter.com/" target="_blank">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://discord.gg/RpSyVmvZ9z" target="_blank">
+            <i class="bx bxl-discord"></i>
+          </a>
+        </div>
+        <div class="btn-container">
+          <a href="https://discord.com/api/oauth2/authorize?client_id=1187165689572769943&scope=bot+applications.commands&permissions=1374891928950" class="btn" target="_blank">
+            <i class="fa-brands fa-discord"></i> Add to Discord
+          </a>
+          <a href="#features" class="btn-gray">
+            <i class="bx bx-chevron-down"></i> See Features
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- HOME END -->
+
+    <!-- FEATURES -->
+    <section class="feature-section" id="features">
+      <h2 class="heading">Discover<span> Our Features</span></h2>
+      <div class="feature-content">
+        <div class="feature-box">
+          <div class="feature-image">
+            <img src="music-feature.png" alt="Music Feature Image" />
+          </div>
+          <div class="feature-description">
+            <h3>Music Playback</h3>
+            <p>
+              Enjoy seamless music playback with our integrated music system.
+              Play, pause, and queue tracks with ease.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-image">
+            <img
+              src="verification-feature.png"
+              alt="Verification Feature Image"
+            />
+          </div>
+          <div class="feature-description">
+            <h3>Verification System</h3>
+            <p>
+              Secure your server with our efficient verification system. Prevent
+              spam and ensure genuine member onboarding.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-image">
+            <img
+              src="button-roles-feature.png"
+              alt="Button Roles Feature Image"
+            />
+          </div>
+          <div class="feature-description">
+            <h3>Button Roles</h3>
+            <p>
+              Empower your community members to assign roles effortlessly using
+              our intuitive button roles system.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-image">
+            <img
+              src="giveaway-feature.png"
+              alt="Giveaway Feature Image"
+            />
+          </div>
+          <div class="feature-description">
+            <h3>Giveaway System</h3>
+            <p>
+              Host exciting giveaways and engage your audience with our
+              versatile giveaway system. Effortlessly manage entries and
+              winners.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-image">
+            <img src="ticket-feature.png" alt="Ticket Feature Image" />
+          </div>
+          <div class="feature-description">
+            <h3>Ticket Support</h3>
+            <p>
+              Provide exceptional support to your users with our ticket system.
+              Streamline issue resolution and enhance user satisfaction.
+            </p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-image">
+            <img src="youtube-feature.png" alt="YouTube Feature Image" />
+          </div>
+          <div class="feature-description">
+            <h3>YouTube Notifications</h3>
+            <p>
+              Stay updated with the latest YouTube content using our
+              notification system. Get notified about new uploads and streams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURES END -->
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <h2 class="heading"><span>What Our Users Say</span></h2>
+      <div class="review-container">
+        <button
+          id="prevReviewBtn"
+          class="review-btn fa-solid fa-angle-left"
+        ></button>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "This bot is very good bot! AirWav did great job on making this
+              bot. It does EVERYTHING!!"
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="user-1.webp"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #1</p>
+            <h3>Justin Schwartz</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "Very good bot, literally had almost everything you want in it do
+              you won't need a ton of bots in your server, this one does
+              everything efficiently and its easy to use . Plus it has snake
+              game in it. :)"
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpeg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #2</p>
+            <h3>boop</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>"great bot!!!"</p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="user-3.webp"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #3</p>
+            <h3>rebster3000</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "Very good BOT useful for big servers, i’ve been using it for
+              months never had an issue with it!"
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpeg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #4</p>
+            <h3>scyp10</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "really good bot, especially for music, its really high quality i
+              love it"
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpeg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #5</p>
+            <h3>slurp</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>"10/10 bot"</p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpeg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #6</p>
+            <h3>angel<3</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>"very epic bot that can do about anything"</p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpeg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #7</p>
+            <h3>Digitally_Charred</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "Really Good Bot, I would recommend this bot to everyone and does
+              what it says. Just underexagerated."
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="user-8.webp"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #8</p>
+            <h3>HappyForza</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "Love this bot, amazing set of commands with an easy to use
+              dashboard. Simple and no fuss. Saves you the need of inviting 10
+              different bots"
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpeg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #9</p>
+            <h3>A | Star</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "good bot that contains many useful features for server
+              management"
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpeg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #10</p>
+            <h3>ERGONOM</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "Insane bot it has everything that I need, works all the time and
+              has helped my server a lot during problems."
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #11</p>
+            <h3>syskey</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "This bot is relatively easy and intuitive to use. It has about
+              every feature you could want for the tasks it advertises. Overall
+              nicely made bot. Plus the developper is nice which is always a
+              plus."
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #12</p>
+            <h3>beep</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>"Great bot, pretty complete!"</p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #13</p>
+            <h3>WhenBrazilao</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>"Really underrated bot try it out"</p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #14</p>
+            <h3>Struct</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>
+              "Really Good Bot, I would recommend this bot to everyone and does
+              what it says. Just underexagerated."
+            </p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="default-user.jpg"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #15</p>
+            <h3>HappyForza</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-content">
+            <p>"Helped with my server, 10/10"</p>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-author">
+            <img
+              src="user-16.webp"
+              alt="Airwavy Logo"
+              class="user-avatar"
+            />
+            <p>Review #16</p>
+            <h3>dhhdhejjr</h3>
+          </div>
+          <div class="review-source">
+            <img src="topgg.png" alt="Top.gg Logo" class="top-gg-logo" />
+          </div>
+        </div>
+        <button
+          id="nextReviewBtn"
+          class="review-btn fa-solid fa-angle-right"
+        ></button>
+      </div>
+    </section>
+    <!-- REVIEWS END -->
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <h2 class="heading"><span>Our Frequently asked questions</span></h2>
+      <div class="faq-container">
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <i class="bx bx-chevron-right"></i>
+            <h3>What is iTzBot?</h3>
+          </div>
+          <div class="collapsible-content">
+            <p>
+              iTzBot stands as the ultimate Discord bot, with an elegant and
+              user-friendly interface. Featuring buttons, modals, embeds and
+              customization, and a plethora of highly effective features,
+              iTzBot reigns as the premier bot in the market, offering Discord
+              users an unparalleled way to enhance their Discord journey.
+            </p>
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <i class="bx bx-chevron-right"></i>
+            <h3>Is iTzBot free?</h3>
+          </div>
+          <div class="collapsible-content">
+            <p>
+              Absolutely, iTzBot is and will continue to be completely free.
+              This commitment to free access remains steadfast as long as the
+              developers are able to sustain this model.
+            </p>
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <i class="bx bx-chevron-right"></i>
+            <h3>How do I use iTzBot?</h3>
+          </div>
+          <div class="collapsible-content">
+            <p>
+              Easy! Just type / in the chat to open up the slash command panel,
+              then enter 'help' and select the iTzBot command. From there, you
+              can engage with the help menu and access all the information you
+              require
+            </p>
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <i class="bx bx-chevron-right"></i>
+            <h3>How do I add iTzBot to my Discord server?</h3>
+          </div>
+          <div class="collapsible-content">
+            <p>
+              You can add iTzBot to your Discord server by clicking the "Add to
+              Discord" button on our website or by using the provided invite
+              link. Once added, you can customize its features and settings.
+            </p>
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <i class="bx bx-chevron-right"></i>
+            <h3>Where can I find more information about iTzBot's commands?</h3>
+          </div>
+          <div class="collapsible-content">
+            <p>
+              You can find detailed information about iTzBot's commands by
+              using the slash command "/help" in your server's chat. This will
+              provide you with a comprehensive list of available commands and
+              their descriptions.
+            </p>
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <i class="bx bx-chevron-right"></i>
+            <h3>Can I contribute to iTzBot's development?</h3>
+          </div>
+          <div class="collapsible-content">
+            <p>
+              Currently, our development team handles Airwavy's development.
+              However, we appreciate your interest! You can support us by
+              providing feedback, reporting issues, and spreading the word about
+              Airwavy.
+            </p>
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <i class="bx bx-chevron-right"></i>
+            <h3>Can I customize iTzBot's settings?</h3>
+          </div>
+          <div class="collapsible-content">
+            <p>
+              Absolutely! iTzBot offers a wide range of customization options
+              to tailor its functionality to your server's requirements. You can
+              easily configure its features and behaviors using both commands
+              and the user-friendly dashboard. This allows you to create a
+              unique experience for your community without any hassle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ END -->
+
+    <!-- CREDITS -->
+    <section class="bot-credits">
+      <h2 class="heading"><span>Main Credits</span></h2>
+      <div class="credit-container">
+        <div class="credit-box">
+          <img src="credits-1.webp" alt="Airwav" class="user-avatar" />
+          <div class="user-details">
+            <h3>iTz Arshia</h3>
+            <p>Owner/Leading Developer</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="heading second-heading"><span>Other Credits</span></h2>
+      <div class="credit-container">
+        <div class="credit-box">
+          <img
+            src="credits-2.webp"
+            alt="User 2"
+            class="user-avatar shadowed"
+          />
+          <div class="user-details">
+            <h3>ItsMartian</h3>
+            <p>Original Source Dev</p>
+          </div>
+        </div>
+        <div class="credit-box">
+          <img
+            src="credits-3.webp"
+            alt="User 2"
+            class="user-avatar shadowed"
+          />
+          <div class="user-details">
+            <h3>Armored Eagle</h3>
+            <p>Inspirations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CREDITS END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Copyright
+          <i class="fa-solid fa-copyright"></i>
+          2023 by iTz Arshia | All Rights Reserved -
+          <a
+            class="footer-credits"
+            target="_blank"
+            href="https://github.com/"
+            >iTz Arshia</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-to-top" onclick="topFunction()" id="scroll-to-top-btn">
+      <a href="#home"
+        ><i class="fa-solid fa-arrow-up" id="scroll-to-top-icon"></i
+      ></a>
+    </div>
+    <!-- SCROLL TO TOP END -->
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9da2f481f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9634405922477284"
+     crossorigin="anonymous"></script>
+    <!-- SCRIPTS END -->
+  </body>
+  <!-- BODY END -->
+</html>
+<!-- HTML END -->
