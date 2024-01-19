@@ -803,6 +803,55 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9634405922477284"
      crossorigin="anonymous"></script>
     <!-- SCRIPTS END -->
+     
+      
+      <div class="notification" id="notification">
+        <div class="notification-title"><b>¿Tienes dudas en la utilización?</b></div>
+        <hr>
+        <div class="notification-text">Haz <a href="https://youtu.be/hksqmhVzGeo">click aquí</a> para ver el video Tutorial. Si tienes dudas, unete a nuestro<a href="https://discord.gg/lucnodes-hosting-s-l-972159858285608970"> Servidor de Soporte</a>. <span class="close-button" onclick="closeNotification()">X</span></div>
+        <button id="noti-boton"><a href="https://youtu.be/hksqmhVzGeo"> Adelante!</a></button>
+      </div>
+      
+      <div class="copy">
+        <a>© 2023 | Lucnodes Hosting</a>
+    </div>
+	</main>
+
+
+    <script>
+      function closeNotification() {
+      var notification = document.getElementById("notification");
+      notification.style.display = "none";
+    }
+          </script>
+    <script>
+      function showToasty() {
+        Toastify({
+          text: "Función no disponible",
+          gravity: "top",
+          position: "center",
+          avatar: './logo.png',
+          style: {
+            border: "2px solid white",
+            borderRadius: "10px" 
+          },
+          backgroundColor: "linear-gradient(to right, gb(65,72,196), #6f6f6f)",
+        }).showToast();
+      }
+      window.addEventListener('scroll', function() {
+  var copyElement = document.querySelector('.copy');
+  var copyOffsetTop = copyElement.offsetTop;
+  var windowHeight = window.innerHeight;
+  var scrollY = window.scrollY;
+  
+  if (scrollY >= copyOffsetTop - windowHeight) {
+    copyElement.classList.add('show');
+  } else {
+    copyElement.classList.remove('show');
+  }
+});
+    </script>
+    
   </body>
   <!-- BODY END -->
 </html>
